@@ -1,30 +1,32 @@
 import React from "react";
 import Navigation from "./components/Navigation";
-import HeroSection from "./components/HeroSection";
-import TrustedPartner from "./components/TrustedPartner";
-import ServicesSection from "./components/ServiceSection";
-import IndustriesSection from "./components/IndustriesSection";
-import TrainingSection from "./components/TrainingSection";
-import EquipmentSection from "./components/EquipmentSection";
-import FreebookSection from "./components/FreebookSection";
-import BlogSection from "./components/BlogSection";
-import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
+import HeroSection from "./components/HeroSection";
+import Services from "./components/ServiceSection";
+import DroneDelivery from "./components/DroneDelivery";
+import Aviation from "./components/Aviation";
+import Industries from "./components/IndustriesSection";
+import About from "./components/About";
+import Training from "./components/TrainingSection";
+import News from "./components/News";
+import Contact from "./components/Contact";
 
-export default function App() {
-  return (
-    <div className="bg-gray-900 overflow-x-hidden">
+const App = () => (
+
+    <div className="bg-black min-h-screen">
       <Navigation />
-      <HeroSection />
-      <TrustedPartner />
-      <ServicesSection />
-      <IndustriesSection />
-      <TrainingSection />
-      <EquipmentSection />
-      <FreebookSection />
-      <BlogSection />
-      <CTASection />
+        <HeroSection/>
+        <Services/>
+        <DroneDelivery/>
+        <Aviation/>
+        <Industries/>
+        <About/>
+        <Training/>
+        <News/>
+        <Contact/>
+
       <Footer />
     </div>
-  );
-}
+);
+
+export default App;
